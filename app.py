@@ -28,7 +28,7 @@ def login():
         resu = {'code': 10001, 'message': '参数不能为空！'}
         return json.dumps(resu, ensure_ascii=False)
 
-@server.route('/cong')
+@server.route('/index')
 def index():
     return render_template('index.htm')
 @server.route('/')
